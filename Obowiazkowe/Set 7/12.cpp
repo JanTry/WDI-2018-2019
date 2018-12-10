@@ -16,7 +16,8 @@ void podzial(int number, int t[N], int q, int cnt)
         cout<<endl;
         return;
     }
-    for(int i=1; i<=q; i++)
+    if(number>0)
+    for(int i=q; i>0; i--)
     {
         t[cnt]=i;
         podzial(number-i, t, i, cnt+1);
