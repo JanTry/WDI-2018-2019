@@ -27,6 +27,23 @@ float odl(punkt t[N], int p[N])
             bl++;
         }
     }
+    if (al==0 && bl==0) return 1000000;
+    if(al==0){
+        punkt as, bs;
+        as.x=0;
+        as.y=0;
+        bs.x=bx/bl;
+        bs.y=by/bl;
+        return sqrt((as.x-bs.x)*(as.x-bs.x)+(as.y-bs.y)*(as.y-bs.y));
+    }
+    if(bl==0){
+        punkt as, bs;
+        bs.x=0;
+        bs.y=0;
+        as.x=ax/al;
+        as.y=ay/al;
+        return sqrt((as.x-bs.x)*(as.x-bs.x)+(as.y-bs.y)*(as.y-bs.y));
+    }
     punkt as, bs;
     as.x=ax/al;
     as.y=ay/al;
