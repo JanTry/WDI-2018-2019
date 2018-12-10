@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <cstdio>
 
 
 using namespace std;
@@ -43,8 +42,11 @@ int main()
     }
     int licz=0;
     wykresl(t,tab,d, licz);
+    for(int i=1;i<licz;i++)
+        for(int j=1;j<licz;j++)
+            if(tab[i]>tab[j])swap(tab[i],tab[j]);
     for(int i=1;i<licz ; i++)
     {
-        cout<<tab[i]<<endl;
+        if(tab[i]!=tab[i-1])cout<<tab[i]<<endl;
     }
 }
