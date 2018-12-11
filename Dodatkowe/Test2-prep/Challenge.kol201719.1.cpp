@@ -3,7 +3,7 @@ using namespace std;
 const int N=100;
 bool p(int t[N], int n,int f[N],int l){
     if(l==N){
-        for(int i=0;i<N-1;i++)if(t[i]!=t[i+1])return 0;
+        for(int i=0;i<n-1;i++)if(t[i]!=t[i+1])return 0;
         return 1;
     }
     for(int i=0;i<n;i++){
