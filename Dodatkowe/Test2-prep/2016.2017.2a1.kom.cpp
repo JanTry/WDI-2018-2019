@@ -31,4 +31,8 @@ int pary(int N, int a=0, int b=0){ //pary(N); -> argumenty definiowane "int a=0"
 } //Zwracamy w kazdej instancji (poza ostatnia) sume uzbieranych par.
 //tzn- pary(....) jest suma zer i jedynek otrzymanych w ostatnich instancjach (takich ostatnich instancji bedzie 2 do potegi n).
 
-int main(){}
+int main(){
+int a;
+cin>>a;
+cout<<endl<<pary(a);
+}
