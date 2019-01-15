@@ -98,53 +98,6 @@ void usun_co_drugi (node* &first, int p=1)
     cout<<endl;
 }
 
-/*void posortuj (node* &first)
-{
-    node* p;
-    p=first;
-    bool fi=true;
-    if(first==NULL) return;
-    node* actual;
-    actual=first;
-    int n=actual->val;
-    while(actual->next!=NULL){
-        p=actual->next;
-        node* prev;
-        prev=NULL;
-        while(p->next!=NULL)
-        {
-            if(p->next->val<n){prev=p; n=p->next->val;}
-            p=p->next;
-        }
-        if(!fi)
-        {
-            if(prev!=NULL){
-                node* q;
-                q=actual->next;
-                actual->next=prev->next;
-                prev->next=prev->next->next;
-                actual->next=q;
-            }
-            actual=actual->next;
-        }
-        else{
-            fi=false;
-            if(prev!=NULL)
-            {
-                node* q;
-                q=prev->next;
-                prev->next=prev->next->next;
-                q->next=first;
-                first=q;
-                q=NULL;
-                actual=first;
-            }
-        }
-        n=actual->val;
-    }
-}
-*/
-
 void posortuj (node* &first)
 {
     if(first==NULL or first->next==NULL)return;
